@@ -14,7 +14,27 @@
 		E586188627D6F608007BB99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E586188427D6F608007BB99D /* LaunchScreen.storyboard */; };
 		E586188F27D6F6BE007BB99D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E586188E27D6F6BE007BB99D /* SnapKit */; };
 		E586189227D6F6CF007BB99D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E586189127D6F6CF007BB99D /* Alamofire */; };
+		E586189A27D6F85B007BB99D /* eungNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586189927D6F85B007BB99D /* eungNewsTests.swift */; };
+		E58618A727D6F8D9007BB99D /* eungNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58618A627D6F8D9007BB99D /* eungNewsUITests.swift */; };
+		E58618A927D6F8D9007BB99D /* eungNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58618A827D6F8D9007BB99D /* eungNewsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E586189B27D6F85B007BB99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E586186E27D6F607007BB99D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E586187527D6F607007BB99D;
+			remoteInfo = eungNews;
+		};
+		E58618AA27D6F8D9007BB99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E586186E27D6F607007BB99D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E586187527D6F607007BB99D;
+			remoteInfo = eungNews;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E586187627D6F607007BB99D /* eungNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eungNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +44,11 @@
 		E586188227D6F608007BB99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E586188527D6F608007BB99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E586188727D6F608007BB99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E586189727D6F85B007BB99D /* eungNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eungNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E586189927D6F85B007BB99D /* eungNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eungNewsTests.swift; sourceTree = "<group>"; };
+		E58618A427D6F8D9007BB99D /* eungNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eungNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58618A627D6F8D9007BB99D /* eungNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eungNewsUITests.swift; sourceTree = "<group>"; };
+		E58618A827D6F8D9007BB99D /* eungNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eungNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E586189427D6F85B007BB99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58618A127D6F8D9007BB99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				E586187827D6F607007BB99D /* eungNews */,
+				E586189827D6F85B007BB99D /* eungNewsTests */,
+				E58618A527D6F8D9007BB99D /* eungNewsUITests */,
 				E586187727D6F607007BB99D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				E586187627D6F607007BB99D /* eungNews.app */,
+				E586189727D6F85B007BB99D /* eungNewsTests.xctest */,
+				E58618A427D6F8D9007BB99D /* eungNewsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +109,23 @@
 				E586188727D6F608007BB99D /* Info.plist */,
 			);
 			path = eungNews;
+			sourceTree = "<group>";
+		};
+		E586189827D6F85B007BB99D /* eungNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E586189927D6F85B007BB99D /* eungNewsTests.swift */,
+			);
+			path = eungNewsTests;
+			sourceTree = "<group>";
+		};
+		E58618A527D6F8D9007BB99D /* eungNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E58618A627D6F8D9007BB99D /* eungNewsUITests.swift */,
+				E58618A827D6F8D9007BB99D /* eungNewsUITestsLaunchTests.swift */,
+			);
+			path = eungNewsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +152,42 @@
 			productReference = E586187627D6F607007BB99D /* eungNews.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E586189627D6F85B007BB99D /* eungNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E586189D27D6F85B007BB99D /* Build configuration list for PBXNativeTarget "eungNewsTests" */;
+			buildPhases = (
+				E586189327D6F85B007BB99D /* Sources */,
+				E586189427D6F85B007BB99D /* Frameworks */,
+				E586189527D6F85B007BB99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E586189C27D6F85B007BB99D /* PBXTargetDependency */,
+			);
+			name = eungNewsTests;
+			productName = eungNewsTests;
+			productReference = E586189727D6F85B007BB99D /* eungNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E58618A327D6F8D9007BB99D /* eungNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58618AC27D6F8D9007BB99D /* Build configuration list for PBXNativeTarget "eungNewsUITests" */;
+			buildPhases = (
+				E58618A027D6F8D9007BB99D /* Sources */,
+				E58618A127D6F8D9007BB99D /* Frameworks */,
+				E58618A227D6F8D9007BB99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E58618AB27D6F8D9007BB99D /* PBXTargetDependency */,
+			);
+			name = eungNewsUITests;
+			productName = eungNewsUITests;
+			productReference = E58618A427D6F8D9007BB99D /* eungNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +200,14 @@
 				TargetAttributes = {
 					E586187527D6F607007BB99D = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					E586189627D6F85B007BB99D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E586187527D6F607007BB99D;
+					};
+					E58618A327D6F8D9007BB99D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E586187527D6F607007BB99D;
 					};
 				};
 			};
@@ -125,6 +229,8 @@
 			projectRoot = "";
 			targets = (
 				E586187527D6F607007BB99D /* eungNews */,
+				E586189627D6F85B007BB99D /* eungNewsTests */,
+				E58618A327D6F8D9007BB99D /* eungNewsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +242,20 @@
 			files = (
 				E586188627D6F608007BB99D /* LaunchScreen.storyboard in Resources */,
 				E586188327D6F608007BB99D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586189527D6F85B007BB99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58618A227D6F8D9007BB99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +272,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E586189327D6F85B007BB99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E586189A27D6F85B007BB99D /* eungNewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58618A027D6F8D9007BB99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58618A927D6F8D9007BB99D /* eungNewsUITestsLaunchTests.swift in Sources */,
+				E58618A727D6F8D9007BB99D /* eungNewsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E586189C27D6F85B007BB99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E586187527D6F607007BB99D /* eungNews */;
+			targetProxy = E586189B27D6F85B007BB99D /* PBXContainerItemProxy */;
+		};
+		E58618AB27D6F8D9007BB99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E586187527D6F607007BB99D /* eungNews */;
+			targetProxy = E58618AA27D6F8D9007BB99D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E586188427D6F608007BB99D /* LaunchScreen.storyboard */ = {
@@ -336,6 +486,76 @@
 			};
 			name = Release;
 		};
+		E586189E27D6F85B007BB99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95JTZ6AP78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eungcheol.eungNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eungNews.app/eungNews";
+			};
+			name = Debug;
+		};
+		E586189F27D6F85B007BB99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95JTZ6AP78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eungcheol.eungNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eungNews.app/eungNews";
+			};
+			name = Release;
+		};
+		E58618AD27D6F8D9007BB99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95JTZ6AP78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eungcheol.eungNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eungNews;
+			};
+			name = Debug;
+		};
+		E58618AE27D6F8D9007BB99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95JTZ6AP78;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eungcheol.eungNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eungNews;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +573,24 @@
 			buildConfigurations = (
 				E586188B27D6F608007BB99D /* Debug */,
 				E586188C27D6F608007BB99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E586189D27D6F85B007BB99D /* Build configuration list for PBXNativeTarget "eungNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E586189E27D6F85B007BB99D /* Debug */,
+				E586189F27D6F85B007BB99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58618AC27D6F8D9007BB99D /* Build configuration list for PBXNativeTarget "eungNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58618AD27D6F8D9007BB99D /* Debug */,
+				E58618AE27D6F8D9007BB99D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
