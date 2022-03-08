@@ -15,7 +15,10 @@ final class NewsListViewController : UIViewController {
     
     private lazy var tableView : UITableView = {
         let tableView = UITableView()
-        tableView.dataSource = self
+        tableView.delegate = presenter
+        tableView.dataSource = presenter
+        tableView.register(NewsListTableHeaderView.self, forHeaderFooterViewReuseIdentifier: NewsListTableHeaderView.identifier)
+        tableView.register(NewsListTableViewCell.self, forCellReuseIdentifier: NewsListTableViewCell.identifier)
         
         return tableView
     }()
@@ -39,26 +42,10 @@ extension NewsListViewController : NewsListProtocol {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    func setupTableView() {
+    func setupLayout() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
 }
-
-extension NewsListViewController : UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .red
-        
-        return cell
-    }
-}
-
