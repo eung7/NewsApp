@@ -19,7 +19,6 @@
 		E58618B027D6FB29007BB99D /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58618AF27D6FB29007BB99D /* NewsListViewController.swift */; };
 		E58618B227D6FEF1007BB99D /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58618B127D6FEF1007BB99D /* NewsListPresenter.swift */; };
 		E58618B627D709E7007BB99D /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58618B527D709E7007BB99D /* NewsListTableViewCell.swift */; };
-		E58618B827D7A2C1007BB99D /* NewsListTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58618B727D7A2C1007BB99D /* NewsListTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		E58618AF27D6FB29007BB99D /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		E58618B127D6FEF1007BB99D /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
 		E58618B527D709E7007BB99D /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
-		E58618B727D7A2C1007BB99D /* NewsListTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 				E58618AF27D6FB29007BB99D /* NewsListViewController.swift */,
 				E58618B127D6FEF1007BB99D /* NewsListPresenter.swift */,
 				E58618B527D709E7007BB99D /* NewsListTableViewCell.swift */,
-				E58618B727D7A2C1007BB99D /* NewsListTableHeaderView.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -292,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58618B027D6FB29007BB99D /* NewsListViewController.swift in Sources */,
-				E58618B827D7A2C1007BB99D /* NewsListTableHeaderView.swift in Sources */,
 				E58618B627D709E7007BB99D /* NewsListTableViewCell.swift in Sources */,
 				E586187A27D6F607007BB99D /* AppDelegate.swift in Sources */,
 				E586187C27D6F607007BB99D /* SceneDelegate.swift in Sources */,
