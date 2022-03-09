@@ -36,30 +36,30 @@ final class NewsListTableViewCell : UITableViewCell {
         
         return label
     }()
-
+    
     func setup() {
         [ titleLabel, descriptionLabel, dateLabel ]
             .forEach { addSubview($0) }
         
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(16.0)
+            $0.trailing.equalToSuperview().inset(48.0)
             $0.leading.equalToSuperview().inset(16.0)
         }
         
         descriptionLabel.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(4.0)
+            $0.trailing.equalTo(titleLabel.snp.trailing)
             $0.leading.equalTo(titleLabel.snp.leading)
         }
         
         dateLabel.snp.makeConstraints {
             $0.top.equalTo(descriptionLabel.snp.bottom).offset(4.0)
+            $0.trailing.equalTo(titleLabel.snp.trailing)
             $0.leading.equalTo(titleLabel.snp.leading)
             $0.bottom.equalToSuperview().inset(16.0)
         }
+        
+        accessoryType = .disclosureIndicator
     }
 }
-
-
-
-
-

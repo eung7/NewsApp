@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 protocol NewsListProtocol : AnyObject {
+    
     func setupNaviationBar()
     func setupLayout()
+    func endRefreshControl()
 }
 
 final class NewsListPresenter :NSObject {
@@ -24,6 +26,11 @@ final class NewsListPresenter :NSObject {
         viewController?.setupNaviationBar()
         viewController?.setupLayout()
     }
+    
+    func didCalledRefreshControl() {
+        viewController?.endRefreshControl()
+    }
+    
 }
 
 extension NewsListPresenter : UITableViewDataSource {
@@ -47,4 +54,6 @@ extension NewsListPresenter : UITableViewDataSource {
 }
 
 extension NewsListPresenter : UITableViewDelegate {
+    
 }
+

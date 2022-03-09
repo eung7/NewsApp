@@ -19,14 +19,16 @@ final class NewsListViewController : UIViewController {
         tableView.dataSource = presenter
         tableView.register(NewsListTableHeaderView.self, forHeaderFooterViewReuseIdentifier: NewsListTableHeaderView.identifier)
         tableView.register(NewsListTableViewCell.self, forCellReuseIdentifier: NewsListTableViewCell.identifier)
+        tableView.refreshControl = refreshControl
         
         return tableView
     }()
     
-    private lazy var tableHeaderView : UITableViewHeaderFooterView  = {
-        let header = UITableViewHeaderFooterView()
+    private lazy var refreshControl : UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(didCalledRefreshControl), for: .valueChanged)
         
-        return header
+        return refreshControl
     }()
     
     override func viewDidLoad() {
@@ -48,4 +50,16 @@ extension NewsListViewController : NewsListProtocol {
             $0.edges.equalToSuperview()
         }
     }
+    
+    func endRefreshControl() {
+        self.refreshControl.endRefreshing()
+    }
 }
+
+private extension NewsListViewController {
+    
+    @objc func didCalledRefreshControl() {
+        presenter.didCalledRefreshControl()
+    }
+}
+
