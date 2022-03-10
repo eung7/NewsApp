@@ -45,6 +45,13 @@ extension NewsListPresenter : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: NewsListTableHeaderView.identifier) as? NewsListTableHeaderView
+        header?.setup()
+        
+        return header ?? UIView()
+    }
 }
 
 extension NewsListPresenter : UITableViewDelegate {

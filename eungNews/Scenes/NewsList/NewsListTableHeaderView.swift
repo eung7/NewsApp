@@ -11,5 +11,9 @@ import SnapKit
 final class NewsListTableHeaderView : UITableViewHeaderFooterView {
     
     static let identifier = "NewsListTableHeaderView"
+    
+    func setup() {
+        contentView.backgroundColor = .red
+    }
 }
 
