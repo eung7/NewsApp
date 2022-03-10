@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SnapKit
 import UIKit
 
 protocol NewsListProtocol : AnyObject {
@@ -52,6 +53,7 @@ extension NewsListPresenter : UITableViewDataSource {
         
         return header ?? UIView()
     }
+    
 }
 
 extension NewsListPresenter : UITableViewDelegate {
