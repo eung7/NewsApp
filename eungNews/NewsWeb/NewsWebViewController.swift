@@ -34,7 +34,6 @@ private extension NewsWebViewController {
     
     func setupNavigationBar() {
         navigationItem.title = "기사제목"
-        navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
@@ -53,3 +52,5 @@ private extension NewsWebViewController {
         UIPasteboard.general.string = "뉴스 링크"
     }
 }
+
+

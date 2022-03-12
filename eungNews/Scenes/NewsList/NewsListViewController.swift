@@ -31,15 +31,16 @@ final class NewsListViewController : UIViewController {
         return refreshControl
     }()
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        presenter.viewDidLoad()
-//    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         presenter.viewDidLoad()
+        
+        NewsSearchManager()
+            .request(from: "아이폰", display: 20, start: 1) { newsArray in
+                print(newsArray)
+            }
     }
+    
 }
 
 extension NewsListViewController : NewsListProtocol {
