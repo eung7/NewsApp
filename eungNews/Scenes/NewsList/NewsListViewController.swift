@@ -31,8 +31,13 @@ final class NewsListViewController : UIViewController {
         return refreshControl
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        presenter.viewDidLoad()
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         presenter.viewDidLoad()
     }
 }
@@ -50,9 +55,15 @@ extension NewsListViewController : NewsListProtocol {
             $0.edges.equalToSuperview()
         }
     }
-    
+
     func endRefreshControl() {
         self.refreshControl.endRefreshing()
+    }
+    
+    func moveToNewsWebViewController() {
+        let newsWebViewController = NewsWebViewController()
+        
+        navigationController?.pushViewController(newsWebViewController, animated: true)
     }
 }
 
@@ -62,5 +73,4 @@ private extension NewsListViewController {
         presenter.didCalledRefreshControl()
     }
 }
-
 
