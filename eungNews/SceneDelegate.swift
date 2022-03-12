@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = UINavigationController(rootViewController: NewsListViewController())
         window?.backgroundColor = .systemBackground
+        window?.tintColor = .systemOrange
         window?.makeKeyAndVisible()
     }
 }
