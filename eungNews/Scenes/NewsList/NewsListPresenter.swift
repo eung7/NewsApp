@@ -8,6 +8,7 @@
 import Foundation
 import SnapKit
 import UIKit
+import TTGTags
 
 protocol NewsListProtocol : AnyObject {
     
