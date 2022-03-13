@@ -13,6 +13,8 @@ final class NewsListViewController : UIViewController {
     
     private lazy var presenter = NewsListPresenter(viewController: self)
     
+    var newsArray : [News] = []
+    
     private lazy var tableView : UITableView = {
         let tableView = UITableView()
         tableView.delegate = presenter
@@ -34,13 +36,7 @@ final class NewsListViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
-        
-        NewsSearchManager()
-            .request(from: "아이폰", display: 20, start: 1) { newsArray in
-                print(newsArray)
-            }
     }
-    
 }
 
 extension NewsListViewController : NewsListProtocol {
@@ -58,13 +54,18 @@ extension NewsListViewController : NewsListProtocol {
     }
 
     func endRefreshControl() {
+        
         self.refreshControl.endRefreshing()
     }
     
-    func moveToNewsWebViewController() {
-        let newsWebViewController = NewsWebViewController()
+    func moveToNewsWebViewController(with news : News) {
+        let newsWebViewController = NewsWebViewController(news: news)
         
         navigationController?.pushViewController(newsWebViewController, animated: true)
+    }
+    
+    func reloadTableView() {
+        tableView.reloadData()
     }
 }
 
@@ -74,4 +75,3 @@ private extension NewsListViewController {
         presenter.didCalledRefreshControl()
     }
 }
-

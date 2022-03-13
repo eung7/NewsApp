@@ -9,15 +9,24 @@ import TTGTags
 import UIKit
 import SnapKit
 
+protocol NewsListTableHeaderViewDelegate : AnyObject {
+    func didSelectedTag(_ selectedIndex : Int)
+}
+
 final class NewsListTableHeaderView : UITableViewHeaderFooterView {
     
     static let identifier = "NewsListTableHeaderView"
     
-    private var tags : [String] = ["주식", "코로나", "부동산", "IT", "경제", "리빙", "앱개발", "강남", "스타트업"]
+    private weak var delegate : NewsListTableHeaderViewDelegate?
     
+    private var tags : [String] = []
+
     private lazy var tagCollectionView = TTGTextTagCollectionView()
     
-    func setup() {
+    func setup(tags : [String], delegate : NewsListTableHeaderViewDelegate) {
+        self.delegate = delegate
+        self.tags = tags
+        
         setupTagCollectionViewLayout()
         setupTagCollectionView()
     }
@@ -32,7 +41,7 @@ extension NewsListTableHeaderView : TTGTextTagCollectionViewDelegate {
     ) {
         guard tag.selected else { return }
         
-        print(tags[Int(index)])
+        delegate?.didSelectedTag(Int(index))
     }
 }
 

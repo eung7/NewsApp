@@ -37,7 +37,12 @@ final class NewsListTableViewCell : UITableViewCell {
         return label
     }()
     
-    func setup() {
+    func setup(news : News) {
+        
+        titleLabel.text = news.title.htmlToString
+        descriptionLabel.text = news.description.htmlToString
+        dateLabel.text = news.pubDate
+        
         [ titleLabel, descriptionLabel, dateLabel ]
             .forEach { addSubview($0) }
         
